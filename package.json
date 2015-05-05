@@ -1,0 +1,15 @@
+{
+  "name": "inpowered-dark",
+  "theme": "inPowered Dark Syntax",
+  "version": "0.0.1",
+  "description": "A an elegant, dark atom theme based on the inPowered brand colors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/travisterwilligar/inpowered-syntax"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/travisterwilligar/inpowered-syntax",
+}

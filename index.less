@@ -1,0 +1,167 @@
+
+@blue:#00A3E5;
+@light_gray:#8D8D8D;
+@lighter_gray:#9FAAB0;
+@comment:rgba(255,255,255,0.35);
+@yellow: #F9E922;
+@pale_yellow:#FFF89C;
+@orange:#F9B42D;
+@green:#63CC44;
+@red:#E64357;
+@background:#001E2D;
+
+
+atom-text-editor, atom-text-editor .gutter,
+:host, :host .gutter {
+  background-color: @background;
+  color: #F8F8F2;
+}
+
+atom-text-editor.is-focused .cursor,
+:host(.is-focused) .cursor {
+  border-color: #fff;
+}
+
+atom-text-editor.is-focused .selection .region,
+:host(.is-focused) .selection .region {
+  background-color: rgba(255,255,255,0.12);
+  background-color: fade(@blue, 25%);
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line,
+:host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(255,255,255,0.12);
+}
+
+.indent-guide, .invisible-character {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+atom-text-editor .wrap-guide,
+:host .wrap-guide {
+  background-color: rgba(197, 200, 198, 0.1);
+}
+
+atom-text-editor .find-result .region,
+atom-text-editor::shadow .find-result .region {
+  border: 1px solid #F8F8F8;
+}
+
+atom-text-editor .current-result .region,
+atom-text-editor::shadow .current-result .region {
+  background-color: #444444;
+  border: 1px solid #F8F8F0;
+}
+
+.comment {
+  color: @comment;
+  font-weight:300;
+}
+
+.string {
+  color: @blue;
+}
+
+.constant.numeric {
+  color: @red;
+}
+
+.constant.language {
+  color: @green;
+}
+
+.constant.character, .constant.other {
+  color: #fff;
+}
+
+.variable {
+  color:lighten(@blue, 37%);
+}
+
+.keyword {
+  color: #fff;
+}
+.keyword.control{
+  color:@yellow;
+}
+
+.storage {
+  color: @yellow;
+}
+
+.storage.type {
+  color: @yellow;
+}
+
+.entity.name.class {
+  text-decoration: underline;
+  color: @orange;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: @pale_yellow;
+}
+
+.entity.name.function {
+  color: @orange;
+}
+
+.variable.parameter {
+  font-style: italic;
+  color: @blue;
+}
+
+.entity.name.tag {
+  color: #fff;
+}
+
+.entity.other.attribute-name {
+  color: #fff;
+}
+
+.support.function {
+  color: @pale_yellow;
+}
+
+.support.constant {
+  color: @red;
+}
+
+.support.type{
+    color:@lighter_gray;
+}
+.support.class {
+  font-style: italic;
+  color: #fff;
+}
+
+.support.other.variable {
+}
+
+.invalid {
+  color: @pale_yellow;
+  background-color: #F92672;
+}
+
+.invalid.deprecated {
+  color: @pale_yellow;
+  background-color: @red;
+}
+
+.meta.structure.dictionary.json .string.quoted.double.json {
+  color: @pale_yellow;
+}
+
+.meta.diff, .meta.diff.header {
+  color: @pale_yellow;
+}
+
+.markup.deleted {
+  color: @light_gray;
+}
+
+.markup.inserted {
+  color: @lighter_gray;
+}
