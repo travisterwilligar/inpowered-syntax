@@ -1,6 +1,6 @@
 {
   "name": "inpowered-dark",
-  "theme": "inPowered Dark Syntax",
+  "theme": "syntax",
   "version": "0.1.0",
   "description": "A an elegant, dark atom theme based on the inPowered brand colors",
   "repository": {
